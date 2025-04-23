@@ -5,16 +5,20 @@ import ButtonCTA from './ButtonCTA';
 interface PricingPlanProps {
   title: string;
   price: string;
+  subprice: string;
   description: string;
   features: Array<{text: string; included: boolean}>;
   ctaText: string;
   ctaLink: string;
   popular?: boolean;
+  disabled?: boolean;
 }
 
 const PricingPlan: React.FC<PricingPlanProps> = ({
   title,
   price,
+  subprice,
+  disabled,
   description,
   features,
   ctaText,
@@ -25,6 +29,7 @@ const PricingPlan: React.FC<PricingPlanProps> = ({
     <div className={`
       bg-white rounded-2xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl
       ${popular ? 'border-2 border-blue-500 transform md:-translate-y-4' : 'border border-gray-200'}
+      ${disabled && 'bg-gray-100 opacity-70'}
     `}>
       {popular && (
         <div className="bg-blue-500 py-2 text-center">
@@ -39,6 +44,7 @@ const PricingPlan: React.FC<PricingPlanProps> = ({
         <div className="mb-6">
           <span className="text-4xl font-bold text-gray-900">{price}</span>
           {price !== 'Personalizado' && <span className="text-gray-600">/mês</span>}
+          <div className="text-sm text-gray-900">{subprice}</div>
         </div>
         
         <ul className="space-y-3 mb-8">
@@ -76,48 +82,49 @@ const Pricing: React.FC = () => {
   const pricingPlans = [
     {
       title: "Básico",
-      price: "R$69,90",
-      subprice: "+ Instalação (a consultar)",
+      price: "R$59,90",
+      subprice: "",
       description: "Ideal para pequenos negócios começando com automação",
       features: [
-        { text: "Até 2000 mensagens/mês", included: true },
+        { text: "Até 500 conversas/mês", included: true },
         { text: "Atendimento automático 24/7", included: true },
         { text: "Respostas para FAQs", included: true },
         { text: "Transferência para humano", included: true },
         { text: "Integrações com sistemas", included: false },
         { text: "Suporte prioritário", included: false },
-        // { text: "1 número de WhatsApp", included: true },
-        // { text: "Relatórios básicos", included: true },
+        // { text: "Inteligência Artificial", included: false },
       ],
       ctaText: "Começar Agora",
-      ctaLink: "#cta",
-      popular: false
+      ctaLink: "https://wa.link/w21xpj",
+      popular: false,
+      disabled: false
     },
     {
       title: "Avançado",
-      price: "R$89,90",
-      subprice: "+ Instalação (a consultar)",
+      price: "R$69,90",
+      subprice: "",
       description: "Perfeito para empresas em crescimento com maior volume",
       features: [
-        { text: "Mensagens ilimitadas", included: true },
+        { text: "Conversas ilimitadas", included: true },
         { text: "Atendimento automático 24/7", included: true },
         { text: "Respostas para FAQs", included: true },
-        // { text: "3 números de WhatsApp", included: true },
-        // { text: "Relatórios avançados", included: true },
         { text: "Transferência para humano", included: true },
         { text: "Integrações com sistemas", included: true },
         { text: "Suporte prioritário", included: true },
+        // { text: "Inteligência Artificial", included: false },
       ],
       ctaText: "Escolher Profissional",
-      ctaLink: "#cta",
-      popular: true
+      ctaLink: "https://wa.link/w21xpj",
+      popular: true,
+      disabled: false,
     },
     // {
-    //   title: "Empresarial",
-    //   price: "R$697",
-    //   description: "Solução completa para empresas estabelecidas",
+    //   title: "Premium (Em breve)",
+    //   price: "R$ --",
+    //   subprice: "",
+    //   description: "Solução completa com Inteligência Artificial",
     //   features: [
-    //     { text: "Mensagens ilimitadas", included: true },
+    //     { text: "Conversas ilimitadas", included: true },
     //     { text: "Atendimento automático 24/7", included: true },
     //     { text: "Respostas para FAQs", included: true },
     //     { text: "10 números de WhatsApp", included: true },
@@ -125,10 +132,12 @@ const Pricing: React.FC = () => {
     //     { text: "Transferência para humano", included: true },
     //     { text: "Integrações com sistemas", included: true },
     //     { text: "Suporte prioritário", included: true },
+    //     { text: "Inteligência Artificial", included: true },
     //   ],
-    //   ctaText: "Escolher Empresarial",
-    //   ctaLink: "#cta",
-    //   popular: false
+    //   ctaText: "Em breve",
+    //   ctaLink: "https://wa.link/w21xpj",
+    //   popular: false,
+    //   disabled: true
     // }
   ];
 
@@ -145,6 +154,7 @@ const Pricing: React.FC = () => {
           </p>
         </div>
 
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"> */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
           {pricingPlans.map((plan, index) => (
             <PricingPlan key={index} {...plan} />
