@@ -2,8 +2,8 @@ import React from 'react';
 import { 
   Clock, 
   MessageCircle, 
-  BarChart, 
-  Users, 
+  // BarChart, 
+  // Users, 
   ShoppingCart, 
   Calendar,
   Settings,
@@ -40,30 +40,30 @@ const Features: React.FC = () => {
       title: "Respostas Inteligentes",
       description: "Sistema inteligente que aprende com interações e personaliza respostas para cada cliente."
     },
-    {
-      icon: <BarChart className="h-7 w-7 text-blue-600" />,
-      title: "Análise de Dados",
-      description: "Relatórios detalhados sobre conversas, horários de pico e assuntos mais perguntados."
-    },
-    {
-      icon: <Users className="h-7 w-7 text-blue-600" />,
-      title: "Atendimento Multiusuário",
-      description: "Gerencie múltiplas conversas simultaneamente sem comprometer a qualidade."
-    },
+    // {
+    //   icon: <BarChart className="h-7 w-7 text-blue-600" />,
+    //   title: "Análise de Dados",
+    //   description: "Relatórios detalhados sobre conversas, horários de pico e assuntos mais perguntados."
+    // },
+    // {
+    //   icon: <Users className="h-7 w-7 text-blue-600" />,
+    //   title: "Atendimento Multiusuário",
+    //   description: "Gerencie múltiplas conversas simultaneamente sem comprometer a qualidade."
+    // },
     {
       icon: <ShoppingCart className="h-7 w-7 text-blue-600" />,
       title: "Vendas Automáticas",
-      description: "Catálogo de produtos integrado com respostas que incentivam compras e aumentam conversão."
+      description: "Excelente ferramenta para vendas no Modelo X1."
     },
     {
       icon: <Calendar className="h-7 w-7 text-blue-600" />,
-      title: "Agendamento Integrado",
+      title: "Agendamento Integrado (em breve)",
       description: "Permita que clientes marquem horários diretamente pelo WhatsApp, sem intervenção manual."
     },
     {
       icon: <Settings className="h-7 w-7 text-blue-600" />,
-      title: "Fácil Configuração",
-      description: "Configure seu bot em minutos, sem conhecimento técnico ou programação necessária."
+      title: "Sem conhecimento técnico",
+      description: "Deixamos o bot pronto para você, fazemos toda a programação necessária."
     },
     {
       icon: <CheckSquare className="h-7 w-7 text-blue-600" />,
@@ -85,7 +85,7 @@ const Features: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature, index) => (
             <FeatureCard 
               key={index}

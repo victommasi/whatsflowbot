@@ -26,26 +26,17 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <MessageCircle className="h-8 w-8 text-green-500 mr-2" />
-            <span className="text-xl font-bold text-gray-800">WhatsFlow</span>
+            <span className="text-xl font-bold text-gray-800">SaviBot</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#features" className="text-gray-700 hover:text-green-500 transition-colors">Features</a>
-            <a href="#benefits" className="text-gray-700 hover:text-green-500 transition-colors">Benefits</a>
-            <a href="#testimonials" className="text-gray-700 hover:text-green-500 transition-colors">Testimonials</a>
-            <a href="#pricing" className="text-gray-700 hover:text-green-500 transition-colors">Pricing</a>
+            <a href="#features" className="text-gray-700 hover:text-green-500 transition-colors">Recursos</a>
+            <a href="#benefits" className="text-gray-700 hover:text-green-500 transition-colors">Benefícios</a>
+            <a href="#testimonials" className="text-gray-700 hover:text-green-500 transition-colors">Depoimentos</a>
+            <a href="#pricing" className="text-gray-700 hover:text-green-500 transition-colors">Planos e Preços</a>
             <a href="#faq" className="text-gray-700 hover:text-green-500 transition-colors">FAQ</a>
           </nav>
-
-          <div className="hidden md:block">
-            <a 
-              href="#cta" 
-              className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-full transition-colors duration-300"
-            >
-              Get Started
-            </a>
-          </div>
 
           {/* Mobile Menu Button */}
           <button 

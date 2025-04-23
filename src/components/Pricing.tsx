@@ -1,5 +1,6 @@
 import React from 'react';
 import { Check, X } from 'lucide-react';
+import ButtonCTA from './ButtonCTA';
 
 interface PricingPlanProps {
   title: string;
@@ -74,59 +75,61 @@ const PricingPlan: React.FC<PricingPlanProps> = ({
 const Pricing: React.FC = () => {
   const pricingPlans = [
     {
-      title: "Iniciante",
-      price: "R$197",
+      title: "Básico",
+      price: "R$69,90",
+      subprice: "+ Instalação (a consultar)",
       description: "Ideal para pequenos negócios começando com automação",
       features: [
-        { text: "Até 500 mensagens/mês", included: true },
+        { text: "Até 2000 mensagens/mês", included: true },
         { text: "Atendimento automático 24/7", included: true },
         { text: "Respostas para FAQs", included: true },
-        { text: "1 número de WhatsApp", included: true },
-        { text: "Relatórios básicos", included: true },
-        { text: "Transferência para humano", included: false },
+        { text: "Transferência para humano", included: true },
         { text: "Integrações com sistemas", included: false },
         { text: "Suporte prioritário", included: false },
+        // { text: "1 número de WhatsApp", included: true },
+        // { text: "Relatórios básicos", included: true },
       ],
       ctaText: "Começar Agora",
       ctaLink: "#cta",
       popular: false
     },
     {
-      title: "Profissional",
-      price: "R$397",
+      title: "Avançado",
+      price: "R$89,90",
+      subprice: "+ Instalação (a consultar)",
       description: "Perfeito para empresas em crescimento com maior volume",
       features: [
-        { text: "Até 2.000 mensagens/mês", included: true },
+        { text: "Mensagens ilimitadas", included: true },
         { text: "Atendimento automático 24/7", included: true },
         { text: "Respostas para FAQs", included: true },
-        { text: "3 números de WhatsApp", included: true },
-        { text: "Relatórios avançados", included: true },
+        // { text: "3 números de WhatsApp", included: true },
+        // { text: "Relatórios avançados", included: true },
         { text: "Transferência para humano", included: true },
-        { text: "Integrações com sistemas", included: false },
-        { text: "Suporte prioritário", included: false },
+        { text: "Integrações com sistemas", included: true },
+        { text: "Suporte prioritário", included: true },
       ],
       ctaText: "Escolher Profissional",
       ctaLink: "#cta",
       popular: true
     },
-    {
-      title: "Empresarial",
-      price: "R$697",
-      description: "Solução completa para empresas estabelecidas",
-      features: [
-        { text: "Mensagens ilimitadas", included: true },
-        { text: "Atendimento automático 24/7", included: true },
-        { text: "Respostas para FAQs", included: true },
-        { text: "10 números de WhatsApp", included: true },
-        { text: "Relatórios avançados", included: true },
-        { text: "Transferência para humano", included: true },
-        { text: "Integrações com sistemas", included: true },
-        { text: "Suporte prioritário", included: true },
-      ],
-      ctaText: "Escolher Empresarial",
-      ctaLink: "#cta",
-      popular: false
-    }
+    // {
+    //   title: "Empresarial",
+    //   price: "R$697",
+    //   description: "Solução completa para empresas estabelecidas",
+    //   features: [
+    //     { text: "Mensagens ilimitadas", included: true },
+    //     { text: "Atendimento automático 24/7", included: true },
+    //     { text: "Respostas para FAQs", included: true },
+    //     { text: "10 números de WhatsApp", included: true },
+    //     { text: "Relatórios avançados", included: true },
+    //     { text: "Transferência para humano", included: true },
+    //     { text: "Integrações com sistemas", included: true },
+    //     { text: "Suporte prioritário", included: true },
+    //   ],
+    //   ctaText: "Escolher Empresarial",
+    //   ctaLink: "#cta",
+    //   popular: false
+    // }
   ];
 
   return (
@@ -142,20 +145,17 @@ const Pricing: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
           {pricingPlans.map((plan, index) => (
             <PricingPlan key={index} {...plan} />
           ))}
         </div>
         
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center mx-auto">
           <p className="text-gray-600 mb-4">Precisa de um plano personalizado para sua empresa?</p>
-          <a 
-            href="#contact" 
-            className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
-          >
-            Entre em contato para um orçamento personalizado →
-          </a>
+          <div className="w-full flex justify-center">
+            <ButtonCTA />
+          </div>
         </div>
       </div>
     </section>

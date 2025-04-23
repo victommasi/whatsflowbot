@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import ButtonCTA from './ButtonCTA';
 
 interface FAQItemProps {
   question: string;
@@ -91,12 +92,9 @@ const FAQ: React.FC = () => {
         
         <div className="mt-12 text-center">
           <p className="text-gray-600 mb-4">Não encontrou sua pergunta?</p>
-          <a 
-            href="#contact" 
-            className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
-          >
-            Entre em contato com nossa equipe →
-          </a>
+          <div className="w-full flex justify-center">
+            <ButtonCTA />
+          </div>
         </div>
       </div>
     </section>

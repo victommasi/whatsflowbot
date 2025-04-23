@@ -1,5 +1,6 @@
 import React from 'react';
-import { ArrowRight, CheckCircle, MessageSquare } from 'lucide-react';
+import { ArrowRight, CheckCircle, MessageSquare, What } from 'lucide-react';
+import ButtonCTA from './ButtonCTA';
 
 const Hero: React.FC = () => {
   return (
@@ -24,27 +25,19 @@ const Hero: React.FC = () => {
               <div className="flex items-start">
                 <CheckCircle className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
                 <p className="text-gray-700">Respostas <span className="font-medium">personalizadas</span> para dúvidas frequentes</p>
+              </div> 
+              <div className="flex items-start">
+                <CheckCircle className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                <p className="text-gray-700">Ideal para vendas no WhatsApp (Método X1) </p>
               </div>
               <div className="flex items-start">
                 <CheckCircle className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                <p className="text-gray-700">Configuração <span className="font-medium">simples</span> e sem conhecimento técnico</p>
+                <p className="text-gray-700"><span className="font-medium">Não precisa de conhecimento técnico.</span> Nós fazemos toda a configuração para você.</p>
               </div>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a 
-                href="#cta" 
-                className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-full transition-colors duration-300 text-center flex items-center justify-center"
-              >
-                Começar Agora
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-              <a 
-                href="#demo" 
-                className="bg-white hover:bg-gray-100 text-gray-800 border border-gray-300 font-medium px-8 py-3 rounded-full transition-colors duration-300 text-center"
-              >
-                Ver Demonstração
-              </a>
+            <div className="flex flex-col sm:flex-row gap-6">
+              <ButtonCTA />
             </div>
           </div>
           
@@ -54,7 +47,7 @@ const Hero: React.FC = () => {
                 <div className="flex items-center mb-3">
                   <MessageSquare className="h-8 w-8 text-green-600 mr-2" />
                   <div>
-                    <h3 className="font-bold text-gray-800">WhatsFlow Bot</h3>
+                    <h3 className="font-bold text-gray-800">SaviBot Bot</h3>
                     <p className="text-xs text-gray-500">Online agora</p>
                   </div>
                 </div>
@@ -80,7 +73,7 @@ const Hero: React.FC = () => {
               </div>
             </div>
             
-            <div className="absolute -top-6 -right-6 bg-yellow-100 rounded-lg p-2 transform rotate-6 shadow-md hidden md:block">
+            <div className="absolute -top-6 -right-2 bg-yellow-100 rounded-lg p-2 transform rotate-12 shadow-md hidden md:block">
               <p className="text-sm font-medium text-yellow-800">
                 Aumente suas vendas em até 40%!
               </p>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Mail, Phone, Instagram, Facebook, Linkedin } from 'lucide-react';
+import { MessageCircle, Mail, Phone, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-1">
             <div className="flex items-center mb-4">
               <MessageCircle className="h-8 w-8 text-green-500 mr-2" />
-              <span className="text-xl font-bold text-white">WhatsFlow</span>
+              <span className="text-xl font-bold text-white">SaviBot</span>
             </div>
             <p className="mb-4">
               Automatize seu atendimento no WhatsApp e transforme seu negócio com nossa solução completa.
@@ -18,16 +18,16 @@ const Footer: React.FC = () => {
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              {/* <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
           
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold text-white mb-4">Empresa</h3>
             <ul className="space-y-2">
               <li><a href="#" className="hover:text-white transition-colors">Sobre nós</a></li>
@@ -36,9 +36,9 @@ const Footer: React.FC = () => {
               <li><a href="#" className="hover:text-white transition-colors">Parceiros</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Imprensa</a></li>
             </ul>
-          </div>
+          </div> */}
           
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold text-white mb-4">Recursos</h3>
             <ul className="space-y-2">
               <li><a href="#" className="hover:text-white transition-colors">Central de Ajuda</a></li>
@@ -47,26 +47,26 @@ const Footer: React.FC = () => {
               <li><a href="#" className="hover:text-white transition-colors">Status</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Comunidade</a></li>
             </ul>
-          </div>
+          </div> */}
           
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Contato</h3>
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-gray-400" />
-                <a href="mailto:contato@whatsflow.com.br" className="hover:text-white transition-colors">
-                  contato@whatsflow.com.br
+                <a href="mailto:studiosavi18@gmail.com" className="hover:text-white transition-colors">
+                  Studio Savi
                 </a>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-gray-400" />
-                <a href="tel:+551198765-4321" className="hover:text-white transition-colors">
-                  (11) 98765-4321
+                <a href="https://wa.link/w21xpj" className="hover:text-white transition-colors">
+                  (85) 99192-4570
                 </a>
               </li>
             </ul>
             
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <h4 className="text-sm font-semibold text-white mb-2">Assine nossa newsletter</h4>
               <div className="flex">
                 <input
@@ -78,14 +78,14 @@ const Footer: React.FC = () => {
                   Enviar
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row md:justify-between items-center">
             <p className="text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} WhatsFlow. Todos os direitos reservados.
+              &copy; {new Date().getFullYear()} SaviBot. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-sm hover:text-white transition-colors">Termos de Serviço</a>

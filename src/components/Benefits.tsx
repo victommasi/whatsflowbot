@@ -18,7 +18,7 @@ const Benefits: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <img 
-              src="https://images.pexels.com/photos/7138759/pexels-photo-7138759.jpeg" 
+              src="https://images.pexels.com/photos/840996/pexels-photo-840996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
               alt="Empresário satisfeito com crescimento nos negócios" 
               className="rounded-lg shadow-xl w-full h-auto"
             />
