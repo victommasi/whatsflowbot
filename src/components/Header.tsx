@@ -25,7 +25,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <img src="../assets/favicon-32x32.png" />
+            <img src="/favicon-32x32.png" />
             <span className="text-xl font-bold text-gray-800 ml-2">X1Bot</span>
           </div>
 
