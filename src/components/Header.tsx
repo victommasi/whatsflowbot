@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, MessageCircle } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,37 +10,62 @@ const Header: React.FC = () => {
       setIsScrolled(window.scrollY > 10);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <header 
+    <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
+        isScrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <MessageCircle className="h-8 w-8 text-green-500 mr-2" />
-            <span className="text-xl font-bold text-gray-800">SaviBot</span>
+            <img src="../assets/favicon-32x32.png" />
+            <span className="text-xl font-bold text-gray-800 ml-2">X1Bot</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#features" className="text-gray-700 hover:text-green-500 transition-colors">Recursos</a>
-            <a href="#benefits" className="text-gray-700 hover:text-green-500 transition-colors">Benefícios</a>
-            <a href="#testimonials" className="text-gray-700 hover:text-green-500 transition-colors">Depoimentos</a>
-            <a href="#pricing" className="text-gray-700 hover:text-green-500 transition-colors">Planos e Preços</a>
-            <a href="#faq" className="text-gray-700 hover:text-green-500 transition-colors">FAQ</a>
+            <a
+              href="#features"
+              className="text-gray-700 hover:text-green-500 transition-colors"
+            >
+              Recursos
+            </a>
+            <a
+              href="#benefits"
+              className="text-gray-700 hover:text-green-500 transition-colors"
+            >
+              Benefícios
+            </a>
+            <a
+              href="#testimonials"
+              className="text-gray-700 hover:text-green-500 transition-colors"
+            >
+              Depoimentos
+            </a>
+            <a
+              href="#pricing"
+              className="text-gray-700 hover:text-green-500 transition-colors"
+            >
+              Planos e Preços
+            </a>
+            <a
+              href="#faq"
+              className="text-gray-700 hover:text-green-500 transition-colors"
+            >
+              FAQ
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden text-gray-700" 
+          <button
+            className="md:hidden text-gray-700"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -51,36 +76,36 @@ const Header: React.FC = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4">
             <nav className="flex flex-col space-y-4">
-              <a 
-                href="#features" 
+              <a
+                href="#features"
                 className="text-gray-700 hover:text-green-500 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Features
               </a>
-              <a 
-                href="#benefits" 
+              <a
+                href="#benefits"
                 className="text-gray-700 hover:text-green-500 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Benefits
               </a>
-              <a 
-                href="#testimonials" 
+              <a
+                href="#testimonials"
                 className="text-gray-700 hover:text-green-500 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Testimonials
               </a>
-              <a 
-                href="#pricing" 
+              <a
+                href="#pricing"
                 className="text-gray-700 hover:text-green-500 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Pricing
               </a>
-              <a 
-                href="#faq" 
+              <a
+                href="#faq"
                 className="text-gray-700 hover:text-green-500 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
