@@ -1,6 +1,7 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
 import ButtonCTA from "./ButtonCTA";
+import logo from "../assets/favicon-32x32.png";
 
 const Hero: React.FC = () => {
   return (
@@ -60,11 +61,7 @@ const Hero: React.FC = () => {
             <div className="bg-white rounded-3xl shadow-xl p-4 max-w-xs mx-auto transform transition-transform hover:scale-105 duration-500">
               <div className="bg-green-100 rounded-2xl p-3">
                 <div className="flex items-center mb-3 gap-2">
-                  <img
-                    src="./assets/favicon-32x32.png"
-                    width="24px"
-                    height="auto"
-                  />
+                  <img src={logo} width="24px" height="auto" />
                   <div>
                     <h3 className="font-bold text-gray-800">X1Bot</h3>
                     <p className="text-xs text-gray-500">Online agora</p>
