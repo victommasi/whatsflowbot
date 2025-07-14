@@ -11,14 +11,13 @@ const Hero: React.FC = () => {
           <div className="md:w-1/2 md:pr-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4">
               Automatize seu <span className="text-green-500">WhatsApp</span> e
-              escale suas comissões como{" "}
+              escale suas vendas como{" "}
               <span className="text-green-500"> afiliado digital</span>
             </h1>
             <p className="text-xl text-gray-700 mb-8">
               Chega de perder tempo com respostas manuais ou extensões
               limitadas. Com o X1Bot, você cria seu atendimento automático em
-              minutos, só clicar e arrastar. 100% independente, sem
-              complicações.
+              minutos, só clicar e arrastar.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -123,7 +122,7 @@ const Hero: React.FC = () => {
 
             <div className="absolute -top-6 -right-2 bg-yellow-100 rounded-lg p-2 transform rotate-12 shadow-md hidden md:block">
               <p className="text-sm font-medium text-yellow-800">
-                Aumente suas vendas em até 40%!
+                Venda 24/7 e ganhe dinheiro enquanto dorme!
               </p>
             </div>
           </div>

@@ -98,7 +98,7 @@ const Testimonials: React.FC = () => {
         "Com o X1Bot automatizei o funil inteiro. Hoje, enquanto gero tráfego, o bot qualifica os leads. Dobrei minhas conversões.",
       name: "Camila S.",
       position: "Afiliada",
-      company: "PLR Fitness",
+      company: "PLR",
       image: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg",
       stars: 5,
       metrics: "Dobrou as conversões!",

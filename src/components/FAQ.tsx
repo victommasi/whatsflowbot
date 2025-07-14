@@ -40,12 +40,12 @@ const FAQ: React.FC = () => {
     {
       question: "Como funciona a automação de WhatsApp?",
       answer:
-        "Nosso sistema utiliza inteligência artificial para responder automaticamente às mensagens dos seus clientes, seguindo um fluxo de conversação que você configura. Quando um cliente envia uma mensagem, o bot analisa o conteúdo e responde de acordo com as regras que você definiu.",
+        "Nosso sistema utiliza responde automaticamente às mensagens dos seus clientes, seguindo um fluxo de conversação que você configura. Quando um cliente envia uma mensagem, o bot analisa o conteúdo e responde de acordo com as regras que você definiu.",
     },
     {
       question: "Preciso ter conhecimento técnico para configurar o bot?",
       answer:
-        "Não! Nossa plataforma foi desenvolvida pensando em afiliados sem conhecimento técnico. A interface é intuitiva e você pode configurar fluxos de atendimento através de uma interface visual simples de arrastar e soltar.",
+        "Não! Nossa plataforma foi desenvolvida pensando em usuários sem conhecimento técnico. A criação dos funis é intuitiva e você pode configurar fluxos de atendimento através de uma interface visual simples de arrastar e soltar.",
     },
     {
       question: "O bot depende de extensões ou navegador?",
