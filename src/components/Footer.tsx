@@ -70,6 +70,7 @@ const Footer: React.FC = () => {
                 <Phone className="h-5 w-5 mr-3 text-gray-400" />
                 <a
                   href="https://wa.link/pqhbxy"
+                  target="_blank"
                   className="hover:text-white transition-colors"
                 >
                   (85) 99192-4570

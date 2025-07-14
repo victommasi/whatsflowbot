@@ -10,44 +10,68 @@ const Hero: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4">
-              Automatize seu atendimento no
-              <span className="text-green-500"> WhatsApp</span>
+              Automatize seu <span className="text-green-500">WhatsApp</span> e
+              escale suas comissões como{" "}
+              <span className="text-green-500"> afiliado digital</span>
             </h1>
             <p className="text-xl text-gray-700 mb-8">
-              Transforme seu atendimento com um bot inteligente que trabalha
-              24/7, aumentando suas vendas e liberando seu tempo para o que
-              realmente importa.
+              Chega de perder tempo com respostas manuais ou extensões
+              limitadas. Com o X1Bot, você cria seu atendimento automático em
+              minutos, só clicar e arrastar. 100% independente, sem
+              complicações.
             </p>
 
             <div className="space-y-4 mb-8">
               <div className="flex items-start">
                 <CheckCircle className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
                 <p className="text-gray-700">
-                  Atendimento automático{" "}
-                  <span className="font-medium">24 horas por dia</span>, 7 dias
-                  por semana
+                  <span className="font-medium">
+                    Atendimento 100% automático -{" "}
+                  </span>
+                  Esqueça extensões que exigem cliques ou o WhatsApp aberto. O
+                  X1Bot responde por você, o tempo todo.
                 </p>
               </div>
               <div className="flex items-start">
                 <CheckCircle className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
                 <p className="text-gray-700">
-                  Respostas <span className="font-medium">personalizadas</span>{" "}
-                  para dúvidas frequentes
+                  <span className="font-medium">Fácil de configurar - </span>
+                  Crie seu fluxo de atendimento com interface simples, só
+                  “clicar e arrastar”. Sem precisar de suporte ou instalação
+                  técnica.
                 </p>
               </div>
+              {/* <div className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                  <p className="text-gray-700">
+                    Ideal para vendas no WhatsApp (Método X1){" "}
+                  </p>
+                </div> */}
+              {/* <div className="flex items-start">
+                <CheckCircle className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                <p className="text-gray-700">
+                  <span className="font-medium">Configuração simples,</span> só
+                  clicar e arrastar
+                </p>
+              </div> */}
               <div className="flex items-start">
                 <CheckCircle className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
                 <p className="text-gray-700">
-                  Ideal para vendas no WhatsApp (Método X1){" "}
+                  <span className="font-medium">
+                    Mais conversões, menos esforço –{" "}
+                  </span>{" "}
+                  Responda rápido, filtre leads quentes e envie mensagens certas
+                  no momento certo.
                 </p>
               </div>
               <div className="flex items-start">
                 <CheckCircle className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
                 <p className="text-gray-700">
                   <span className="font-medium">
-                    Não precisa de conhecimento técnico.
+                    Preço justo e transparente –{" "}
                   </span>{" "}
-                  Nós fazemos toda a configuração para você.
+                  Um dos melhores custo-benefícios do mercado. Automatize sem
+                  pesar no bolso.
                 </p>
               </div>
             </div>

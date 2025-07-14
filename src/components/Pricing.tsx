@@ -93,16 +93,19 @@ const PricingPlan: React.FC<PricingPlanProps> = ({
 const Pricing: React.FC = () => {
   const pricingPlans = [
     {
-      title: "Básico",
+      title: "STARTER",
       price: "R$59,90",
       subprice: "",
-      description: "Ideal para pequenos negócios começando com automação",
+      description: "Ideal para quem está começando e precisar economizar.",
       features: [
-        { text: "Até 500 conversas/mês", included: true },
-        { text: "Atendimento automático 24/7", included: true },
-        { text: "Respostas para FAQs", included: true },
+        { text: "1 usuário", included: true },
+        { text: "3 números de Whatsapp", included: true },
+        { text: "Até 3 bots", included: true },
+        { text: "Até 2.000 conversas/mês", included: true },
+        { text: "Funil de Atendimento automático 24/7", included: true },
+        { text: "Marca D'agua removida", included: true },
         { text: "Transferência para humano", included: true },
-        { text: "Integrações com sistemas", included: false },
+        { text: "Maior economia", included: true },
         { text: "Suporte prioritário", included: false },
         // { text: "Inteligência Artificial", included: false },
       ],
@@ -112,16 +115,19 @@ const Pricing: React.FC = () => {
       disabled: false,
     },
     {
-      title: "Avançado",
-      price: "R$69,90",
+      title: "PRO",
+      price: "R$99,90",
       subprice: "",
-      description: "Perfeito para empresas em crescimento com maior volume",
+      description: "Perfeito para já tem experiência e quer escalar as vendas.",
       features: [
-        { text: "Conversas ilimitadas", included: true },
-        { text: "Atendimento automático 24/7", included: true },
-        { text: "Respostas para FAQs", included: true },
+        { text: "5 usuários", included: true },
+        { text: "Números de WhatsApp ilimitados", included: true },
+        { text: "Bots ilimitados", included: true },
+        { text: "Até 20.000 conversas/mês", included: true },
+        { text: "Funil de Atendimento automático 24/7", included: true },
+        { text: "Marca D'agua removida", included: true },
         { text: "Transferência para humano", included: true },
-        { text: "Integrações com sistemas", included: true },
+        { text: "Melhor custo x benefício", included: true },
         { text: "Suporte prioritário", included: true },
         // { text: "Inteligência Artificial", included: false },
       ],
@@ -164,8 +170,8 @@ const Pricing: React.FC = () => {
             Escolha o plano ideal para seu negócio
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Temos opções para empresas de todos os tamanhos. Comece hoje mesmo e
-            veja resultados imediatos.
+            Temos duas opções para afiliados. Comece hoje mesmo e veja
+            resultados imediatos.
           </p>
         </div>
 
@@ -178,10 +184,10 @@ const Pricing: React.FC = () => {
 
         <div className="mt-12 text-center mx-auto">
           <p className="text-gray-600 mb-4">
-            Precisa de um plano personalizado para sua empresa?
+            Precisa de um plano personalizado para você?
           </p>
           <div className="w-full flex justify-center">
-            <ButtonCTA />
+            <ButtonCTA title="Fale com o nosso especialista" />
           </div>
         </div>
       </div>

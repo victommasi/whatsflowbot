@@ -75,35 +75,39 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4">
+          <div
+            className={`md:hidden mt-4 pb-2 pl-2 rounded-sm ${
+              isScrolled ? "bg-white" : "bg-[aliceblue]"
+            }`}
+          >
             <nav className="flex flex-col space-y-4">
               <a
                 href="#features"
                 className="text-gray-700 hover:text-green-500 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Features
+                Recursos
               </a>
               <a
                 href="#benefits"
                 className="text-gray-700 hover:text-green-500 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Benefits
+                Benefícios
               </a>
               <a
                 href="#testimonials"
                 className="text-gray-700 hover:text-green-500 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Testimonials
+                Depoimentos
               </a>
               <a
                 href="#pricing"
                 className="text-gray-700 hover:text-green-500 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Pricing
+                Planos e Preços
               </a>
               <a
                 href="#faq"
@@ -112,13 +116,13 @@ const Header: React.FC = () => {
               >
                 FAQ
               </a>
-              <a
+              {/* <a
                 href="#cta"
                 className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-full transition-colors duration-300 text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Get Started
-              </a>
+              </a> */}
             </nav>
           </div>
         )}
