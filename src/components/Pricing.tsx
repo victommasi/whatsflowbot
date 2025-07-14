@@ -93,6 +93,26 @@ const PricingPlan: React.FC<PricingPlanProps> = ({
 const Pricing: React.FC = () => {
   const pricingPlans = [
     {
+      title: "FREE",
+      price: "Grátis",
+      subprice: "",
+      description: "Para começar a testar.",
+      features: [
+        { text: "1 usuário", included: true },
+        { text: "1 número de Whatsapp", included: true },
+        { text: "1 bot", included: true },
+        { text: "Até 20 conversas/mês", included: true },
+        { text: "Funil de Atendimento automático 24/7", included: true },
+        { text: "Transferência para humano", included: true },
+        { text: "Suporte prioritário", included: false },
+        // { text: "Inteligência Artificial", included: false },
+      ],
+      ctaText: "Começar Grátis",
+      ctaLink: "https://wa.link/pqhbxy",
+      popular: false,
+      disabled: false,
+    },
+    {
       title: "STARTER",
       price: "R$59,90",
       subprice: "",
@@ -108,7 +128,7 @@ const Pricing: React.FC = () => {
         { text: "Suporte prioritário", included: false },
         // { text: "Inteligência Artificial", included: false },
       ],
-      ctaText: "Começar Agora",
+      ctaText: "Assinar Starter",
       ctaLink: "https://wa.link/pqhbxy",
       popular: false,
       disabled: false,
@@ -129,7 +149,7 @@ const Pricing: React.FC = () => {
         { text: "Suporte prioritário", included: true },
         // { text: "Inteligência Artificial", included: false },
       ],
-      ctaText: "Escolher Profissional",
+      ctaText: "Assinar Pro",
       ctaLink: "https://wa.link/pqhbxy",
       popular: true,
       disabled: false,
@@ -174,7 +194,7 @@ const Pricing: React.FC = () => {
         </div>
 
         {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"> */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {pricingPlans.map((plan, index) => (
             <PricingPlan key={index} {...plan} />
           ))}
