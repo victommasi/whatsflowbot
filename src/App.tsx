@@ -14,12 +14,12 @@ function App() {
       <Header />
       <main>
         <Hero />
+        {/* <CTA /> */}
         <Features />
         <Benefits />
         <Testimonials />
         <Pricing />
         <FAQ />
-        {/* <CTA /> */}
       </main>
       <Footer />
     </div>

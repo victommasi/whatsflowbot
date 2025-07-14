@@ -76,6 +76,10 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6">
+              {/* <ButtonCTA
+                title="Quero ver uma demonstração"
+                link="https://wa.link/5empa5"
+              />*/}
               <ButtonCTA />
             </div>
           </div>

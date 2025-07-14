@@ -2,14 +2,16 @@ import React from "react";
 
 type ButtonCTAProps = {
   title?: string;
+  link?: string;
 };
 
 const ButtonCTA: React.FC<ButtonCTAProps> = ({
   title = "Quero meu atendimento automático agora",
+  link = "https://wa.link/pqhbxy",
 }: ButtonCTAProps) => {
   return (
     <a
-      href="https://wa.link/pqhbxy"
+      href={link}
       target="_blank"
       className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-full transition-colors duration-300 text-center flex items-center justify-center uppercase max-w-96"
     >
