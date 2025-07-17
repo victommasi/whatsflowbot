@@ -108,7 +108,7 @@ const Pricing: React.FC = () => {
         // { text: "Inteligência Artificial", included: false },
       ],
       ctaText: "Começar Grátis",
-      ctaLink: "https://wa.link/pqhbxy",
+      ctaLink: "https://app.x1bot.com.br",
       popular: false,
       disabled: false,
     },
@@ -129,7 +129,7 @@ const Pricing: React.FC = () => {
         // { text: "Inteligência Artificial", included: false },
       ],
       ctaText: "Assinar Starter",
-      ctaLink: "https://wa.link/pqhbxy",
+      ctaLink: "https://app.x1bot.com.br",
       popular: false,
       disabled: false,
     },
@@ -150,7 +150,7 @@ const Pricing: React.FC = () => {
         // { text: "Inteligência Artificial", included: false },
       ],
       ctaText: "Assinar Pro",
-      ctaLink: "https://wa.link/pqhbxy",
+      ctaLink: "https://app.x1bot.com.br",
       popular: true,
       disabled: false,
     },
@@ -188,8 +188,8 @@ const Pricing: React.FC = () => {
             Escolha o plano ideal para seu negócio
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Temos duas opções para afiliados. Comece hoje mesmo e veja
-            resultados imediatos.
+            Temos três opções para você. Comece hoje mesmo e veja resultados
+            imediatos.
           </p>
         </div>
 

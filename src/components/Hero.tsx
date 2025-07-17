@@ -15,9 +15,10 @@ const Hero: React.FC = () => {
               <span className="text-green-500"> afiliado digital</span>
             </h1>
             <p className="text-xl text-gray-700 mb-8">
-              Chega de perder tempo com respostas manuais ou extensões
-              limitadas. Com o X1Bot, você cria seu atendimento automático em
-              minutos, só clicar e arrastar.
+              <strong>O melhor bot para vender no X1!</strong> Chega de perder
+              tempo com respostas manuais ou extensões limitadas. Com o X1Bot,
+              você cria seu atendimento automático em minutos, só clicar e
+              arrastar.
             </p>
 
             <div className="space-y-4 mb-8">
